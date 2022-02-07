@@ -13,16 +13,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      -name: Setup Go
+      - name: Setup Go
         uses: actions/setup-go@v2
         with:
           go-version: '1.17.6'
 
-      -name: Install dependencies
+      - name: Install dependencies
         run: |
           go version
           go mod download
 
-      -name: Run build
+      - name: Run build
         run: go build .
