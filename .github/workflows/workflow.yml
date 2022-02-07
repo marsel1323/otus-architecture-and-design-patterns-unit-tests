@@ -24,4 +24,4 @@ jobs:
           go mod download
 
       - name: Run build
-        run: go build .
+        run: go build cmd/main.go
