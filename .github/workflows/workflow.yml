@@ -25,3 +25,6 @@ jobs:
 
       - name: Run build
         run: go build cmd/main.go
+
+      - name: Run app
+        run: ./main
